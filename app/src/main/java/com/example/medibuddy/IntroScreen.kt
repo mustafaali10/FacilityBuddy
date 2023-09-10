@@ -1,4 +1,4 @@
-package com.example.facilitybuddy
+package com.example.medibuddy
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

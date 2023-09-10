@@ -1,4 +1,4 @@
-package com.example.facilitybuddy
+package com.example.medibuddy
 
 data class HospitalData(val name:String="",
                         val address:String="",

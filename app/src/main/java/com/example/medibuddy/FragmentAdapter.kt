@@ -1,4 +1,4 @@
-package com.example.facilitybuddy
+package com.example.medibuddy
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

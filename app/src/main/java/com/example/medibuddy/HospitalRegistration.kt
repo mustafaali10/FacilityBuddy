@@ -1,4 +1,4 @@
-package com.example.facilitybuddy
+package com.example.medibuddy
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -42,7 +42,7 @@ class HospitalRegistration : AppCompatActivity() {
         )
 
 
-        val apiKey= " "
+        val apiKey= "AIzaSyChqgbAHBU8C2rVWd4QEfn1WUaD3_G737I"
         //Get your API Key from here https://developers.google.com/maps/documentation/places/web-service/get-api-key
 
         // Initialize Places SDK

@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.facilitybuddy"
+    namespace = "com.example.medibuddy"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.facilitybuddy"
+        applicationId = "com.example.medibuddy"
         minSdk = 23
         targetSdk = 33
         versionCode = 1
