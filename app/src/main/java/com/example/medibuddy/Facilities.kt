@@ -6,8 +6,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.appcompat.widget.SearchView
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -16,6 +18,7 @@ class Facilities : Fragment() {
         private var mList=ArrayList<ItemsData>()
         private lateinit var adapter: ItemsAdapter
         private var originalList = ArrayList<ItemsData>()
+        private lateinit var progressBar:ProgressBar
 
         override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
             super.onViewCreated(view, savedInstanceState)
@@ -23,6 +26,7 @@ class Facilities : Fragment() {
 
 
             val searchView = (activity as MainActivity).searchView
+            //progressBar=view.findViewById<ProgressBar>(R.id.progressBar)
 
             searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
                 override fun onQueryTextSubmit(query: String?): Boolean {
@@ -76,7 +80,9 @@ class Facilities : Fragment() {
             adapter.setOnItemClickListener(object : ItemsAdapter.OnItemClickListener{
                 override fun onItemClick(position: Int) {
 
+                    //progressBar.visibility=View.VISIBLE
                     val intent= Intent(context, DetailsActivity::class.java)
+
 
                     intent.putExtra("title",mList[position].title)
                     intent.putExtra("logo",mList[position].logo)

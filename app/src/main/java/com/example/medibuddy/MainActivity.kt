@@ -2,6 +2,7 @@ package com.example.medibuddy
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ProgressBar
 import androidx.appcompat.widget.SearchView
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
@@ -11,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var tabLayout: TabLayout
     private lateinit var viewPager2: ViewPager2
     private lateinit var adapter: FragmentPageMainActivityAdapter
+    //private lateinit var progressBar:ProgressBar
 
 
     lateinit var searchView: SearchView
@@ -25,6 +27,7 @@ class MainActivity : AppCompatActivity() {
 
 
         searchView=findViewById(R.id.searchView)
+        //progressBar=findViewById(R.id.progressBar)
 
 
         tabLayout.addTab(tabLayout.newTab().setText("Facilities"))
