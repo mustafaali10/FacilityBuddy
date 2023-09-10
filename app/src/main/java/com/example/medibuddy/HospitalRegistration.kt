@@ -42,7 +42,7 @@ class HospitalRegistration : AppCompatActivity() {
         )
 
 
-        val apiKey= "AIzaSyChqgbAHBU8C2rVWd4QEfn1WUaD3_G737I"
+        val apiKey= ""
         //Get your API Key from here https://developers.google.com/maps/documentation/places/web-service/get-api-key
 
         // Initialize Places SDK
