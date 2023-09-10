@@ -1,9 +1,7 @@
 package com.example.facilitybuddy
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 
